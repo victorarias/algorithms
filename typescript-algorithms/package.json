@@ -1,0 +1,43 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "eslint"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "name": "typescript-algorithms",
+  "author": "Victor Arias",
+  "module": "dist/typescript-algorithms.esm.js",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.9.0",
+    "eslint-plugin-jest": "^24.0.2",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.3"
+  }
+}

@@ -1,5 +1,5 @@
 import { quicksort } from "./quicksort";
-import { generateRandomIntegerArray } from "./random";
+import { getRandomIntegerArray } from "./random";
 
 describe("quicksort", () => {
   it("sorts the given array in place", () => {
@@ -18,7 +18,7 @@ describe("quicksort", () => {
 
   it("sorts correctly", () => {
     for (let i = 0; i < 100; i++) {
-      const arr1 = generateRandomIntegerArray(1000, 10000),
+      const arr1 = getRandomIntegerArray(1000, 10000),
         arr2 = [...arr1];
 
       quicksort(arr1);

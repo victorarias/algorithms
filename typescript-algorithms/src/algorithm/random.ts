@@ -2,15 +2,18 @@ function getRandomInt(max: number): number {
   return Math.floor(Math.random() * max);
 }
 
-function generateRandomIntegerArray(maxCount: number, max: number): number[] {
+function getRandomIntegerArray(
+  maxNumberOfItems: number,
+  maxValueWithinArray: number
+): number[] {
   const arr = [];
 
-  let count = getRandomInt(maxCount);
+  let count = getRandomInt(maxNumberOfItems);
   while (count-- > 0) {
-    arr.push(getRandomInt(max));
+    arr.push(getRandomInt(maxValueWithinArray));
   }
 
   return arr;
 }
 
-export { getRandomInt, generateRandomIntegerArray };
+export { getRandomInt, getRandomIntegerArray };
